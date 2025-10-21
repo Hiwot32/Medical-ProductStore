@@ -1,0 +1,76 @@
+.container{
+    padding:40px;
+    display:flex;
+    gap: 450px;
+}
+.right ul li {
+  position: relative; /* Needed for underline pseudo-element */
+
+}
+.navLinks a:hover{
+    color: rgb(226,187,83);
+}
+.navLinks li:hover{
+    color:rgb(226,187,83);
+  cursor: pointer;
+}
+.right ul li a{
+    padding-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+  transition: color 0.3s ease;
+}
+.right .navLinks a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;              
+  width: 0;                  
+  background-color: rgb(226,187,83); 
+  transition: width 0.3s ease;
+  
+
+}
+.right .navLinks a:hover::after{
+    width: 100%;
+}
+.navLinks{
+    list-style-type: none;
+    display:flex;
+    gap:60px;
+}
+
+/* about link */
+.about{
+    position:relative;
+}
+.dropDown{
+    list-style-type: none;
+    position: absolute;
+    top: 100%; /* directly below parent */
+    background-color: white; /* match nav background */
+    padding: 10px 20px;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+.dropDown li{
+    padding: 10px 5px;
+    border-radius: 15px;
+    transition:background-color 0.3s ease ;
+    
+}
+.dropDown li a{
+    color: black !important;
+    padding-bottom: 35px;
+}
+.dropDown li:hover{
+    background-color: rgb(39, 92, 83);
+
+    
+}
+
+
