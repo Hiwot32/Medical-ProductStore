@@ -1,0 +1,100 @@
+.outerSection{
+    width:100%;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width:95%;
+    margin: 0 auto;
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.left{
+    width:50%;
+    color:white;
+}
+.left h1{
+    font-size: 65px;
+    padding-bottom: 25px;
+}
+.left p{
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+.left h4{
+    display:flex;
+    gap:7px;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+.check{
+    color:rgb(226, 187, 83);
+}
+.left button{
+  margin-top: 30px;
+  padding: 25px 85px;
+  border: none;
+  border-radius: 35px;
+  background-color: rgb(226, 187, 83);
+  color: white; /* text color initially */
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.left button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;        /* solid white overlay */
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  z-index: 0; 
+}
+
+/* slide up on hover */
+.left button:hover::before {
+  transform: translateY(0);
+}
+.left button:hover {
+  color: rgb(39, 92, 83);
+}
+
+.left button span {
+  position: relative;
+  z-index: 1;               /* ensures text is always visible */
+  color: rgb(39, 92, 83);   /* change text color on hover */
+  transition: color 0.4s ease;
+}
+
+
+.right img {
+  animation: zoomIn 3s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width:992px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
