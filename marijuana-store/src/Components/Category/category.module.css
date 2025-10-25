@@ -1,0 +1,47 @@
+.outerdiv{
+    width:100%;
+}
+.container{
+    width:87%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+    padding: 60px 0px;
+}
+.card{
+    height: 300px;
+    border-radius: 15px;
+    text-align:center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    
+}
+
+.name{
+    padding-left: 45px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.texts{
+    width:77%;
+    margin: 0 auto;
+    bottom: 0;
+    color:white;
+    margin-top: 150px;
+}
+.des{
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+.links {
+    text-decoration: none;
+    color:rgb(226, 187, 83);
+    border-bottom: 2px solid rgb(226, 187, 83);
+    padding-bottom: 3px;
+    font-size: 17px;
+    
+}
+
+
