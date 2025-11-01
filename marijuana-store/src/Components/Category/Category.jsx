@@ -10,7 +10,7 @@ function Category() {
                 <div className={categoryStyle.card}
                 style={{
                     backgroundImage:`url(${data.image})`,
-                    backgroundSize:'cover'
+                    // backgroundSize:'cover'
                     
                 }}>
                     <div className={categoryStyle.texts}>
