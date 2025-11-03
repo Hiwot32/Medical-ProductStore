@@ -1,0 +1,71 @@
+.outerSection{
+    width:100%;
+    
+}
+.container{
+    width:95%;
+    margin: 0 auto;
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Images/Amnesia/imgi_38_amnesia-bg.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+      display: flex;
+  justify-content: flex-end;
+}
+.texts{
+    width: 32%;
+    padding: 150px 80px;
+}
+.blue{
+    color: rgb(226,187,83);
+    font-size: 4rem;
+}
+.texts h1{
+    color:white;
+    font-size: 120px;
+
+}
+.texts .desc{
+    font-size: 17px;
+    line-height: 28px;
+    color:white;
+    padding-bottom: 50px;
+}
+.texts button{
+    padding:22px 75px;
+    border:none;
+    border-radius: 30px;
+    background-color: rgb(226,187,83);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: rgb(39, 92, 83);
+}
+.texts button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;        
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  z-index: 0; 
+}
+
+/* slide up on hover */
+.texts button:hover::before {
+  transform: translateY(0);
+}
+.texts button span {
+  position: relative;
+  z-index: 1;               /* ensures text is always visible */
+  color: rgb(39, 92, 83);   /* change text color on hover */
+  transition: color 0.4s ease;
+}
+
+@media (max-width:992px){
+    .texts{
+        width: 53%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

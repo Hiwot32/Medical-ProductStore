@@ -6,6 +6,7 @@ import Footer from '../../Components/Footer/Footer'
 import Hero from '../../Components/Hero/Hero'
 import Category from '../../Components/Category/Category'
 import About from '../../Components/About/About'
+import Amnesia from '../../Components/Amnesia/Amnesia'
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         <Hero />
         <Category />
         <About />
+        <Amnesia />
         <Footer />
       
     </div>
